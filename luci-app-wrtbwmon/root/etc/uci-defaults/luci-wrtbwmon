@@ -1,5 +1,4 @@
 #!/bin/sh
-
 uci -q batch <<-EOF >/dev/null
 	delete ucitrack.@wrtbwmon[-1]
 	add ucitrack wrtbwmon
