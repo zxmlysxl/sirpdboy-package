@@ -3,7 +3,10 @@
 
 START=95
 STOP=10
-
+Log=/etc/autotimeset/autotimeset.log
+TMP=/etc/autotimeset
+[ ! -d $TMP ] && mkdir -p $TMP 2>/dev/null
+[ -s $LOG ] && echo ' ' >> $LOG
 run_autotimeset()
 {
 ssum=$(grep -c stime /etc/config/autotimeset)
@@ -55,6 +58,10 @@ do
 				;;
 			9)
 				local cmd="$minute $hour * $month $week /usr/bin/timesethandler disreconn" 
+				echo "$cmd" >> /etc/crontabs/root
+				;;
+			10)
+				local cmd="$minute $hour * $month $week /usr/bin/timesethandler restartmwan3" 
 				echo "$cmd" >> /etc/crontabs/root
 				;;
 		esac

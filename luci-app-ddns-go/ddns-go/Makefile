@@ -6,18 +6,17 @@
 # 
 # This is free software, licensed under the Apache License, Version 2.0 .
 #
-
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ddnsgo
-PKG_VERSION:=4.4.2
+PKG_VERSION:=4.5.7
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/jeessy2/ddns-go.git
-PKG_SOURCE_VERSION:=3adfc85ea96204dc762b99fff93770323fc2120c
-PKG_MIRROR_HASH:=c017a4e96593bbffedacac9aef21e59bba1a84a983e4c46fffe4fa2f09a1b241
+PKG_SOURCE_VERSION:=46c21f6710dc9d5a932a437816486296c9c61f1c
+PKG_MIRROR_HASH:=277fb153983d0fb5f0cba633e89943e451e0da141ca76773af2d6b97d871c8e6
 
 PKG_LICENSE:=AGPL-3.0-only
 PKG_LICENSE_FILES:=LICENSE
