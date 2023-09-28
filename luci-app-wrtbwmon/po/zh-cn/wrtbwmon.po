@@ -59,6 +59,12 @@ msgstr "显示更多:"
 msgid "bandwidth:"
 msgstr "带宽:"
 
+msgid "Upload bandwidth"
+msgstr "上行带宽"
+
+msgid "Download bandwidth"
+msgstr "下行带宽"
+
 msgid "Calculate per host totals"
 msgstr "单主机总流量统计"
 
@@ -151,6 +157,9 @@ msgstr "实时速度"
 
 msgid "Online User"
 msgstr "在线用户"
+
+msgid "Online Users"
+msgstr "在线用户数量"
 
 msgid "Speed monitor"
 msgstr "实时监控"
